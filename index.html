@@ -1,0 +1,180 @@
+<!DOCTYPE html><!-----type du langage de developement de la page ----->
+<html lang="en"><!-----------------------langue------------------------------->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <title>Document</title>
+
+</head>
+<body>
+    <!----------------------------------------header---------------------------------------------------->
+    <header>
+
+        <!-- mon logo a gauche et navigation a droite  -->
+        <div class="info-bar">
+            <div class="phone"><a href="tel:+33123456789"><i class="fas fa-phone-alt"></i> +33 1 23 45 67 89</a></div>
+            <div class="email"><a href="mailto:contact@exemple.com"><i class="fas fa-envelope"></i> contact@exemple.com</a></div>
+        </div>
+        
+        </div>
+        <!------------------------------------navbarre-------------------------------------------------->
+        <nav class="navbar">
+            <button class="menu-toggle">&#9776;</button>
+            <img class="logo" src="Maquette_FINAL_TP_JS/Maquette_FINAL_TP_JS/Sources/logo.png" alt="Logo">
+            <div class="navbar-links">
+                <a href="#home">ACCUEIL</a>
+                <a href="#lien1">LIEN1</a>
+                <a href="#lien2">LIEN2</a>
+                <a href="#lien3">LIEN3</a>
+                <a href="#lien4">LIEN4</a>
+            </div>
+        </nav>
+        
+    </header>
+    <main>
+ 
+<!-- Indicateur de progression du défilement -->
+<div id="scrollIndicator"></div>
+
+<!-- Boutons de navigation -->
+<div id="scrollButtons">
+    <button onclick="scrollToTop()">↑ Haut</button>
+    <button onclick="scrollToBottom()">↓ Bas</button>
+</div>
+
+    <!-- Section Carrousel -->
+    <section class="carousel-container">
+        <!-- -------------------------------------------------------Carrousel Images-------------------------------- -->
+        <div class="carousel">
+            <div class="item active"><img src="Maquette_FINAL_TP_JS\Maquette_FINAL_TP_JS\Sources\pic1.jpg" alt="Image 1" /></div>
+            <div class="item"><img src="Maquette_FINAL_TP_JS\Maquette_FINAL_TP_JS\Sources\pic2.jpg" alt="Image 2" /></div>
+            <div class="item"><img src="Maquette_FINAL_TP_JS\Maquette_FINAL_TP_JS\Sources\pic3.jpg" alt="Image 3" /></div>
+            <div class="item"><img src="Maquette_FINAL_TP_JS\Maquette_FINAL_TP_JS\Sources\pic4.jpg" alt="Image 4" /></div>
+            <div class="item"><img src="Maquette_FINAL_TP_JS\Maquette_FINAL_TP_JS\Sources\pic5.jpg" alt="Image 5" /></div>
+            <div class="item"><img src="Maquette_FINAL_TP_JS\Maquette_FINAL_TP_JS\Sources\pic7.jpg" alt="Image 7" /></div>
+            <div class="item"><img src="Maquette_FINAL_TP_JS\Maquette_FINAL_TP_JS\Sources\pic8.jpg" alt="Image 8" /></div>
+
+
+
+
+
+            <!-- Ajoutez d'autres images si nécessaire -->
+        </div>
+
+        <button class="btn prev">&#10094;</button>
+        <button class="btn next">&#10095;</button>
+    </section>
+
+    <!----------------------------------card---------------------------------------------------------------------->
+    <div class="icon-row">
+        <div class="icon-column">
+            <img src="Maquette_FINAL_TP_JS/Maquette_FINAL_TP_JS/Sources/icone1.png" alt="Eco System" class="icon icon1">
+            <h3>ECO SYSTEM</h3>
+        </div>
+        <div class="icon-column">
+            <img src="Maquette_FINAL_TP_JS/Maquette_FINAL_TP_JS/Sources/icone2.png" alt="Save Animals" class="icon icon2">
+            <h3>SAVE ANIMALS</h3>
+        </div>
+        <div class="icon-column">
+            <img src="Maquette_FINAL_TP_JS/Maquette_FINAL_TP_JS/Sources/icone3.png" alt="Solar Energy" class="icon icon3">
+            <h3>SOLAR ENERGY</h3>
+        </div>
+        <div class="icon-column">
+            <img src="Maquette_FINAL_TP_JS/Maquette_FINAL_TP_JS/Sources/icone4.png" alt="Save Forests" class="icon icon4">
+            <h3>SAVE FORESTS</h3>
+        </div>
+    </div>
+    <!--------------------------------------galerie-------------------------------------------------------->
+    <h2>GALERIE PHOTO</h2>
+<div class="container">
+    <div class="gauche">
+        <div id="galerie" class="flex-container">
+            <!-- Chaque 'gallery-item' contient une image, une légende et un paragraphe -->
+            <div class="gallery-item">
+                <img src="Maquette_FINAL_TP_JS/Maquette_FINAL_TP_JS/Sources/pic1.jpg" alt="Description Image 1" onclick="ouvrirEnGrand(this.src, this.alt)">
+                <br>
+                <div class="caption">Keep the Warm</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </div>
+            <div class="gallery-item">
+                <img src="Maquette_FINAL_TP_JS/Maquette_FINAL_TP_JS/Sources/pic2.jpg" alt="Description Image 2" onclick="ouvrirEnGrand(this.src, this.alt)">
+                <br>
+                <div class="caption">Keep the Warm</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </div>
+            <div class="gallery-item">
+                <img src="Maquette_FINAL_TP_JS/Maquette_FINAL_TP_JS/Sources/pic3.jpg" alt="Description Image 3" onclick="ouvrirEnGrand(this.src, this.alt)">
+                <br>
+                <div class="caption">Keep the Warm</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </div>
+            <div class="gallery-item">
+                <img src="Maquette_FINAL_TP_JS/Maquette_FINAL_TP_JS/Sources/pic4.jpg" alt="Description Image 4" onclick="ouvrirEnGrand(this.src, this.alt)">
+                <br>
+                <div class="caption">Keep the Warm</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </div>
+            <div class="gallery-item">
+                <img src="Maquette_FINAL_TP_JS/Maquette_FINAL_TP_JS/Sources/pic5.jpg" alt="Description Image 5" onclick="ouvrirEnGrand(this.src, this.alt)">
+               <br>
+                <div class="caption">Keep the Warm</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </div>
+            <div class="gallery-item">
+                <img src="Maquette_FINAL_TP_JS/Maquette_FINAL_TP_JS/Sources/pic7.jpg" alt="Description Image 6" onclick="ouvrirEnGrand(this.src, this.alt)">
+               <br>
+                <div class="caption">Keep the Warm</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </div>
+            <div class="gallery-item">
+                <img src="Maquette_FINAL_TP_JS/Maquette_FINAL_TP_JS/Sources/pic8.jpg" alt="Description Image 7" onclick="ouvrirEnGrand(this.src, this.alt)">
+               <br>
+                <div class="caption">Keep the Warm</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </div>
+        </div>
+    </div>
+    <div class="droite">
+        <div id="imageSelectionnee">
+            <!-- L'image agrandie et le bouton de fermeture seront injectés ici -->
+        </div>
+    </div>
+</div>
+
+    <!-- Pied de page -->
+    <footer>
+        <!------------------------------------------------- FOOTER--------------------- -->
+        <a href="#home">ACCUEIL</a>
+            <a href="#lien1">LIEN1</a>
+            <a href="#lien2">LIEN2</a>
+            <a href="#lien3">LIEN3</a>
+            <a href="#lien4">LIEN4</a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
